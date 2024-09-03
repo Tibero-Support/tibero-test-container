@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    group:
+      local: [ "local" ]
+      test: [ "test" ]
+    default: local
+
+  application:
+    name: tibero-container
+
+  datasource:
+    hikari:
+      jdbcUrl:
+      maximum-pool-size:
+      username:
+      password:
+      driver-class-name:
+      schema:
+
+  jpa:
+    database-platform:
+    show-sql:
+    hibernate:
+      naming:
+        physical-strategy:
+      ddl-auto:
+    generate-ddl:
+    properties:
+      hibernate:
+        format_sql:
+        dialect:
+
+  flyway:
+    locations:
+    sql-migration-suffixes:
+    baseline-on-migrate:
+    baseline-version:
+    default-schema:
+    enabled:
+
+server:
+  port: 8080

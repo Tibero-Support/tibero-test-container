@@ -1,0 +1,13 @@
+services:
+  tibero-test:
+    image: keesung/tibero:7.0.0
+    platform: linux/amd64
+    ports:
+      - "8629"
+    hostname: localhost
+    volumes:
+      - ./tibero:/usr/local
+    stdin_open: true
+    tty: true
+    command: "bash /usr/local/start-tibero.sh"
+
