@@ -1,13 +1,10 @@
 services:
   tibero-test:
-    image:  ghcr.io/tibero-support/tibero7
+    image: ghcr.io/tibero-support/tibero7
     platform: linux/amd64
     ports:
       - "8629"
     hostname: localhost
     volumes:
-      - ./tibero:/usr/local
-    stdin_open: true
-    tty: true
-    command: "bash /usr/local/start-tibero.sh"
+      - ./tibero/license.xml:/tibero7/license/license.xml
 
