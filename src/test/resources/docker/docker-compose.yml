@@ -1,6 +1,6 @@
 services:
   tibero-test:
-    image: keesung/tibero:7.0.0
+    image:  ghcr.io/tibero-support/tibero7
     platform: linux/amd64
     ports:
       - "8629"
